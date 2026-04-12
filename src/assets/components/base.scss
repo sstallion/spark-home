@@ -148,9 +148,12 @@
           color: var(--text-header);
           padding: 8px 12px;
           &:hover,
-          &:focus {
+          &:focus-visible {
             color: var(--text-header);
             background-color: var(--highlight-hover);
+          }
+          &:focus:not(:focus-visible):not(:hover) {
+            background-color: transparent;
           }
         }
         .navbar-menu {

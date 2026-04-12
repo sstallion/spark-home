@@ -54,10 +54,10 @@ export default defineConfig({
       useCredentials: true,
       manifestFilename: "assets/manifest.json",
       manifest: {
-        name: "Homer dashboard",
-        short_name: "Homer",
-        description: "Home Server Dashboard",
-        theme_color: "#3367D6",
+        name: "DGX Home",
+        short_name: "Home",
+        background_color: "#000000",
+        theme_color: "#76b900",
         start_url: "../",
         scope: "../",
         icons: [

@@ -1,26 +1,51 @@
 ---
 # Default configuration
 
-title: "Dashboard"
-subtitle: "Homer"
+title: Home
+subtitle: DGX Spark
+documentTitle: DGX Home
+logo: logo.png
 
 header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: >
+  <p>Made with <a href="https://github.com/bastienwirtz/homer/">Homer</a>.
+  DGX, DGX SPARK, and the NVIDIA logo are trademarks and/or registered
+  trademarks of NVIDIA Corporation in the U.S. and other countries.</p>
 
 columns: 3
 connectivityCheck: true
 
 defaults:
-  # columns, list
-  layout: columns
-  # auto, light, dark
+  layout: list
   colorTheme: auto
 
 theme: default
 colors: ~
 
 message: ~
-links: []
+
+links:
+  - name: Playbooks
+    icon: fas fa-bookmark
+    url: https://build.nvidia.com/spark
+    target: _blank
+  - name: User Guide
+    icon: fas fa-book
+    url: https://docs.nvidia.com/dgx/dgx-spark/
+    target: _blank
+  - name: Forum
+    icon: fas fa-comments
+    url: https://forums.developer.nvidia.com/c/accelerated-computing/dgx-spark-gb10
+    target: _blank
+  - name: FAQ
+    icon: fas fa-circle-question
+    url: https://forums.developer.nvidia.com/t/dgx-spark-gb10-faq/347344
+    target: _blank
+  - name: Support
+    icon: fas fa-headset
+    url: https://www.nvidia.com/en-us/support/dgx-spark/
+    target: _blank
+
 services: []
 
 proxy: ~

@@ -1,0 +1,84 @@
+// Theme colors
+.light {
+    --highlight-primary: #000000;
+    --highlight-secondary: #1a1a1a;
+    --highlight-hover: #76b900;
+    --background: #f7f7f7;
+    --card-background: #ffffff;
+    --text: #000000;
+    --text-header: #ffffff;
+    --text-title: #000000;
+    --text-subtitle: #999999;
+    --card-shadow: rgba(0, 0, 0, 0.4);
+    --link: #999999;
+    --link-hover: #76b900;
+}
+
+.dark {
+    --highlight-primary: #000000;
+    --highlight-secondary: #1a1a1a;
+    --highlight-hover: #76b900;
+    --background: #000000;
+    --card-background: #1a1a1a;
+    --text: #ffffff;
+    --text-header: #ffffff;
+    --text-title: #ffffff;
+    --text-subtitle: #999999;
+    --card-shadow: rgba(0, 0, 0, 0.4);
+    --link: #999999;
+    --link-hover: #76b900;
+}
+
+#app {
+  --highlight-blue: #444b6e;
+  --highlight-red: #c83e4d;
+  --highlight-pink: #ff6392;
+  --highlight-orange: #ff8a08;
+  --highlight-green: #22a699;
+  --highlight-purple: #711db0;
+}
+
+:root {
+  --first-line-height: 64px;
+  --header-font-weight: 700;
+  color-scheme: light dark;
+}
+
+body {
+  /* Avoid flashing opposing background color */
+  background-color: light-dark(#ffffff, #000000);
+
+  /* Taken from https://www.nvidia.com */
+  font-family: NVIDIA Sans,NVIDIA Sans Fallback,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#bighead {
+  .first-line {
+    min-height: var(--first-line-height);
+    .logo img {
+      max-height: var(--first-line-height);
+      max-width: none;
+    }
+    h1 {
+      font-weight: var(--header-font-weight);
+    }
+  }
+  .search-bar input:focus {
+    box-shadow:
+      0 0 0 2px var(--highlight-secondary),
+      0 0 0 4px var(--highlight-hover);
+    outline: none;
+  }
+}
+
+#main-section {
+  h1 {
+    font-weight: var(--header-font-weight);
+  }
+  h2 {
+    font-weight: var(--header-font-weight);
+    i {
+      color: var(--text);
+    }
+  }
+}

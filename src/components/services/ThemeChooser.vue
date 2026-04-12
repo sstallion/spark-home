@@ -9,9 +9,7 @@
         <div class="select is-small">
           <select v-model="theme" @change="switchTheme">
             <option value="" disabled selected>Available themes</option>
-            <option value="theme-classic">classic</option>
-            <option value="theme-neon">neon</option>
-            <option value="theme-walkxcode">walkxcode</option>
+            <option value="theme-nvidia">nvidia</option>
           </select>
         </div>
       </div>
