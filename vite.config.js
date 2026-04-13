@@ -29,32 +29,13 @@ export default defineConfig({
   },
   plugins: [
     writeVersionPlugin(),
-    // Custom plugin to serve dummy-data JSON files without sourcemap injection
-    {
-      name: "dummy-data-json-handler",
-      configureServer(server) {
-        server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/dummy-data/")) {
-            // Remove query parameters from URL to get the actual file path
-            const urlWithoutQuery = req.url.split("?")[0];
-            const filePath = path.join(process.cwd(), urlWithoutQuery);
-
-            if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-              res.end(fs.readFileSync(filePath, "utf8"));
-              return;
-            }
-          }
-          next();
-        });
-      },
-    },
     vue(),
     VitePWA({
       registerType: "autoUpdate",
       useCredentials: true,
       manifestFilename: "assets/manifest.json",
       manifest: {
-        name: "DGX Home",
+        name: "DGX Spark",
         short_name: "Home",
         background_color: "#000000",
         theme_color: "#76b900",

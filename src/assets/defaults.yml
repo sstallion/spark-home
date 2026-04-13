@@ -3,7 +3,7 @@
 
 title: Home
 subtitle: DGX Spark
-documentTitle: DGX Home
+documentTitle: DGX Spark
 logo: logo.png
 
 header: true
@@ -19,7 +19,7 @@ defaults:
   layout: list
   colorTheme: auto
 
-theme: default
+theme: nvidia
 colors: ~
 
 message: ~

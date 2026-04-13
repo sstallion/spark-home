@@ -45,10 +45,10 @@
 }
 
 body {
-  /* Avoid flashing opposing background color */
+  // Avoid flashing opposing background color
   background-color: light-dark(#ffffff, #000000);
 
-  /* Taken from https://www.nvidia.com */
+  // Taken from https://www.nvidia.com
   font-family: NVIDIA Sans,NVIDIA Sans Fallback,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 

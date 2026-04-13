@@ -153,7 +153,7 @@ export default {
     this.buildDashboard();
     window.onhashchange = this.buildDashboard;
     this.loaded = true;
-    console.info(`Homer v${__APP_VERSION__}`);
+    console.info(`Spark Home v${__APP_VERSION__}`);
   },
   beforeUnmount() {
     window.onhashchange = null;
